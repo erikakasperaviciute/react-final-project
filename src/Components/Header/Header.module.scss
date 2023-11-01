@@ -1,0 +1,35 @@
+.navHeader {
+    background-color: black;
+    padding: 15px 0;
+}
+
+.headerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoWrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    .logoImg {
+        width: 50px;
+        height: 50px;
+    }
+    .pageName {
+        color: whitesmoke;
+        font-family: "Russo One", sans-serif;
+        font-size: 26px;
+        text-decoration: none;
+    }
+}
+
+.mainNavigation {
+    .navList {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        gap: 15px 30px;
+    }
+}
