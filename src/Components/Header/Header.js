@@ -11,9 +11,9 @@ const Header = () => {
       <Container>
         <div className={styles.headerWrapper}>
           <div className={styles.logoWrapper}>
-            <img src={logo} alt="logo" className={styles.logoImg} />
-            <NavLink to="/" className={styles.pageName}>
-              CinematiX
+            <img src={logo} alt="logo" />
+            <NavLink to="/">
+              Cinemati<span>X</span>
             </NavLink>
           </div>
           <nav className={styles.mainNavigation}>

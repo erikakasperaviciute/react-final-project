@@ -1,0 +1,68 @@
+@use "../../mixin.scss";
+.movieItem {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    position: relative;
+    // background-color: black;
+    // box-shadow: 5px 5px 5px rgb(54 54 54 / 20%);
+    border-radius: 8px;
+    &:hover {
+        cursor: pointer;
+        scale: 1.05;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    .movieImg {
+        img {
+            width: 100%;
+            height: 295px;
+            object-fit: contain;
+            border-radius: 8px 8px 0 0;
+            box-shadow: 5px 5px 5px rgb(54 54 54 / 20%);
+        }
+        span {
+            position: absolute;
+            top: 5px;
+            padding: 5px 8px;
+            border-radius: 8px;
+            left: 150px;
+            background-color: black;
+            color: white;
+        }
+    }
+    .titleWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 5px 10px 15px;
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 8px;
+            padding: 0;
+            margin: 0;
+            flex-wrap: wrap;
+            font-size: 10px;
+            font-weight: 600;
+            li {
+                background: mixin.$accent-color;
+                text-transform: uppercase;
+                color: white;
+                padding: 3px 5px;
+                border-radius: 5px;
+            }
+        }
+
+        h3 {
+            color: white;
+            margin-top: 0;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+}
