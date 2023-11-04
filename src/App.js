@@ -6,6 +6,7 @@ import Header from "./Components/Header/Header";
 import MoviesPage from "./Pages/MoviesPage/MoviesPage";
 import MoviePage from "./Pages/MoviePage/MoviePage";
 import ActorsPage from "./Pages/ActorsPage/ActorsPage";
+import ActorPage from "./Pages/ActorPage/ActorPage";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Route path="/movies" element={<MoviesPage />} />
         <Route path="/movies/:id" element={<MoviePage />} />
         <Route path="/actors" element={<ActorsPage />} />
-        <Route path="/actors/:id" element={<h1>Actor Page</h1>} />
+        <Route path="/actors/:id" element={<ActorPage />} />
 
         <Route path="*" element={<h1>404: Page not found</h1>} />
       </Routes>

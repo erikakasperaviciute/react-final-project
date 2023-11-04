@@ -6,6 +6,7 @@
     left: 0;
     background-color: mixin.$secondary-color;
     padding: 15px 0;
+    z-index: 10;
 }
 
 .headerWrapper {
@@ -27,6 +28,7 @@
         font-family: "Russo One", sans-serif;
         font-size: 26px;
         text-decoration: none;
+        filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.6));
         span {
             color: mixin.$accent-color;
             font-size: 34px;

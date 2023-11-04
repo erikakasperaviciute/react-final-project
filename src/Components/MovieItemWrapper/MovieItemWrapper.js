@@ -11,7 +11,6 @@ const MovieItemWrapper = ({ data }) => {
     rating,
     amountOfRatings,
     director,
-    actors,
     posterSrc,
   } = data;
 

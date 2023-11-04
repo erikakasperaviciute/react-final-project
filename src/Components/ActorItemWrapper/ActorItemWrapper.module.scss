@@ -24,11 +24,14 @@
         ul {
             display: flex;
             list-style: none;
-            gap: 8px;
+            gap: 5px;
             padding: 0;
             margin: 8px 0;
             li {
                 font-size: 14px;
+                &:not(:last-child)::after {
+                    content: " /";
+                }
             }
         }
     }
