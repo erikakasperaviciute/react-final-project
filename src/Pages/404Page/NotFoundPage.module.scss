@@ -1,0 +1,35 @@
+@use "../../mixin.scss";
+
+.contentWrapper {
+    text-align: center;
+    h1 {
+        color: mixin.$accent-color;
+        font-size: 160px;
+        margin: 100px 0 0;
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+    }
+    p {
+        margin-bottom: 50px;
+    }
+    .backHomeBtn {
+        transition: 0.6s;
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: whitesmoke;
+            background-color: mixin.$accent-color;
+            padding: 10px 15px;
+            border-radius: 8px;
+            box-shadow: 7px 7px 5px rgb(54 54 54 / 20%);
+            transition: 0.6s;
+        }
+        &:hover {
+            scale: 1.05;
+            a {
+                background-color: whitesmoke;
+                color: red;
+            }
+        }
+    }
+}
