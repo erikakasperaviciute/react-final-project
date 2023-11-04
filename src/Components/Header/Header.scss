@@ -1,15 +1,27 @@
+@use "../../mixin.scss";
+
 .navItem {
     a {
-        font-weight: 500;
-        color: whitesmoke;
+        font-weight: 600;
+        // color: whitesmoke;
         text-transform: uppercase;
         text-decoration: none;
+        color: transparent;
+        background: linear-gradient(90deg, #fff, #fff 50%, mixin.$accent-color 50%, mixin.$accent-color);
+        background-size: 200% 100%;
+        background-clip: text;
+        transition: 0.4s linear;
         &:hover {
-            text-decoration: underline;
+            background-position: -100% 0;
         }
+        // &:hover {
+        //     text-decoration: underline;
+        // }
         &.active {
-            color: red;
-            text-decoration: underline;
+            color: mixin.$accent-color;
+            // text-decoration: underline;
+            background: none;
+            transition: none;
         }
     }
 }

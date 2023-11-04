@@ -1,0 +1,13 @@
+.navItem a {
+  font-weight: 500;
+  color: whitesmoke;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.navItem a:hover {
+  text-decoration: underline;
+}
+.navItem a.active {
+  color: #e01925;
+  text-decoration: underline;
+}

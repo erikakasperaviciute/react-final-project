@@ -1,0 +1,38 @@
+.actorItem {
+    width: 200px;
+    &:hover {
+        cursor: pointer;
+        scale: 1.05;
+    }
+    a {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+        box-shadow: 7px 7px 5px rgb(54 54 54 / 20%);
+    }
+    .infoWrapper {
+        h3 {
+            text-transform: uppercase;
+            font-size: 16px;
+            margin-top: 0;
+            font-weight: 600;
+        }
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 5px;
+            padding: 0;
+            margin: 8px 0;
+            li {
+                font-size: 14px;
+                &:not(:last-child)::after {
+                    content: " /";
+                }
+            }
+        }
+    }
+}

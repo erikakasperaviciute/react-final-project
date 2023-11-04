@@ -1,0 +1,40 @@
+.navHeader {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #090909;
+  padding: 15px 0;
+}
+
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logoWrapper img {
+  width: 50px;
+  height: 50px;
+}
+.logoWrapper a {
+  color: whitesmoke;
+  font-family: "Russo One", sans-serif;
+  font-size: 26px;
+  text-decoration: none;
+}
+.logoWrapper a span {
+  color: #bd0611;
+  font-size: 34px;
+}
+
+.mainNavigation .navList {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  gap: 15px 30px;
+}

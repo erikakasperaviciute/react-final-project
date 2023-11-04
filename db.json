@@ -1,8 +1,422 @@
 {
   "movies": [
-    
+    {
+      "id": 1,
+      "title": "Inception",
+      "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.",
+      "year": 2010,
+      "genre": [
+        "Action",
+        "Adventure",
+        "Sci-Fi",
+        "Thriller"
+      ],
+      "rating": 8.8,
+      "amountOfRatings": 2500000,
+      "director": [
+        "Christopher Nolan"
+      ],
+      "posterSrc": "https://images.squarespace-cdn.com/content/v1/5ec686197f8b2976074846c2/1618894366055-XO4Q20SQ906L3V7N2IW6/INCEPTION+poster+CMYK.jpg?format=1000w",
+      "imageSrc": "https://www.themoviedb.org/t/p/original/s3TBrRGB1iav7gFOCNx3H31MoES.jpg"
+    },
+    {
+      "id": 2,
+      "title": "A Haunting in Venice",
+      "description": "In post-World War II Venice, Poirot, now retired and living in his own exile, reluctantly attends a seance. But when one of the guests is murdered, it is up to the former detective to once again uncover the killer.",
+      "year": 2023,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Horror"
+      ],
+      "rating": 6.8,
+      "amountOfRatings": 21000,
+      "director": [
+        "Kenneth Branagh"
+      ],
+      "posterSrc": "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/261/2023/08/22115134/1Xgjl22MkAZQUavvOeBqRehrvqO-scaled.jpg",
+      "imageSrc": "https://arconline.co.uk/app/uploads/2023/09/a-haunting-in-venice.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Joker",
+      "description": "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.",
+      "year": 2019,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "rating": 8.4,
+      "amountOfRatings": 1400000,
+      "director": [
+        "Todd Phillips"
+      ],
+      "posterSrc": "https://www.joblo.com/wp-content/uploads/2019/08/joker-poster-main2-1.jpg",
+      "imageSrc": "https://www.themoviedb.org/t/p/original/f5F4cRhQdUbyVbB5lTNCwUzD6BP.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Inception",
+      "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.",
+      "year": 2010,
+      "genre": [
+        "Action",
+        "Adventure",
+        "Sci-Fi",
+        "Thriller"
+      ],
+      "rating": 8.8,
+      "amountOfRatings": 2500000,
+      "director": [
+        "Christopher Nolan"
+      ],
+      "posterSrc": "https://images.squarespace-cdn.com/content/v1/5ec686197f8b2976074846c2/1618894366055-XO4Q20SQ906L3V7N2IW6/INCEPTION+poster+CMYK.jpg?format=1000w",
+      "imageSrc": "https://www.themoviedb.org/t/p/original/s3TBrRGB1iav7gFOCNx3H31MoES.jpg"
+    },
+    {
+      "id": 5,
+      "title": "A Haunting in Venice",
+      "description": "In post-World War II Venice, Poirot, now retired and living in his own exile, reluctantly attends a seance. But when one of the guests is murdered, it is up to the former detective to once again uncover the killer.",
+      "year": 2023,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Horror"
+      ],
+      "rating": 6.8,
+      "amountOfRatings": 21000,
+      "director": [
+        "Kenneth Branagh"
+      ],
+      "posterSrc": "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/261/2023/08/22115134/1Xgjl22MkAZQUavvOeBqRehrvqO-scaled.jpg",
+      "imageSrc": "https://arconline.co.uk/app/uploads/2023/09/a-haunting-in-venice.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Joker",
+      "description": "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.",
+      "year": 2019,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "rating": 8.4,
+      "amountOfRatings": 1400000,
+      "director": [
+        "Todd Phillips"
+      ],
+      "posterSrc": "https://www.joblo.com/wp-content/uploads/2019/08/joker-poster-main2-1.jpg",
+      "imageSrc": "https://www.themoviedb.org/t/p/original/f5F4cRhQdUbyVbB5lTNCwUzD6BP.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Inception",
+      "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.",
+      "year": 2010,
+      "genre": [
+        "Action",
+        "Adventure",
+        "Sci-Fi",
+        "Thriller"
+      ],
+      "rating": 8.8,
+      "amountOfRatings": 2500000,
+      "director": [
+        "Christopher Nolan"
+      ],
+      "posterSrc": "https://images.squarespace-cdn.com/content/v1/5ec686197f8b2976074846c2/1618894366055-XO4Q20SQ906L3V7N2IW6/INCEPTION+poster+CMYK.jpg?format=1000w",
+      "imageSrc": "https://www.themoviedb.org/t/p/original/s3TBrRGB1iav7gFOCNx3H31MoES.jpg"
+    },
+    {
+      "id": 8,
+      "title": "A Haunting in Venice",
+      "description": "In post-World War II Venice, Poirot, now retired and living in his own exile, reluctantly attends a seance. But when one of the guests is murdered, it is up to the former detective to once again uncover the killer.",
+      "year": 2023,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Horror"
+      ],
+      "rating": 6.8,
+      "amountOfRatings": 21000,
+      "director": [
+        "Kenneth Branagh"
+      ],
+      "posterSrc": "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/261/2023/08/22115134/1Xgjl22MkAZQUavvOeBqRehrvqO-scaled.jpg",
+      "imageSrc": "https://arconline.co.uk/app/uploads/2023/09/a-haunting-in-venice.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Joker",
+      "description": "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.",
+      "year": 2019,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "rating": 8.4,
+      "amountOfRatings": 1400000,
+      "director": [
+        "Todd Phillips"
+      ],
+      "posterSrc": "https://www.joblo.com/wp-content/uploads/2019/08/joker-poster-main2-1.jpg",
+      "imageSrc": "https://www.themoviedb.org/t/p/original/f5F4cRhQdUbyVbB5lTNCwUzD6BP.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Killers of the Flower Moon",
+      "description": "When oil is discovered in 1920s Oklahoma under Osage Nation land, the Osage people are murdered one by one - until the FBI steps in to unravel the mystery.",
+      "year": 2023,
+      "genre": [
+        "Crime",
+        "Drama",
+        "History"
+      ],
+      "rating": 8.0,
+      "amountOfRatings": 1400000,
+      "director": [
+        "Martin Scorsese"
+      ],
+      "posterSrc": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/dB6Krk806zeqd0YNp2ngQ9zXteH.jpg",
+      "imageSrc": "https://www.themoviedb.org/t/p/original/wCte7A4O2L7CAiw70fbFuvkngA7.jpg"
+    }
   ],
   "actors": [
-    
+    {
+      "id": 1,
+      "name": "Leonardo DiCaprio",
+      "birthday": "November 11, 1974",
+      "about": "Leonardo Wilhelm DiCaprio is an American actor and film producer. Known for his work in biographical and period films, he is the recipient of numerous accolades, including an Academy Award, a British Academy Film Award and three Golden Globe Awards. As of 2019, his films have grossed over $7.2 billion worldwide, and he has been placed eight times in annual rankings of the world's highest-paid actors.",
+      "ocupation": [
+        "Producer",
+        "Actor",
+        "Writer"
+      ],
+      "profilePictureSrc": "https://st2.depositphotos.com/1814084/5224/i/450/depositphotos_52241775-stock-photo-leonardo-dicaprio.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Joseph Gordon-Levitt",
+      "birthday": "February 17, 1981",
+      "ocupation": [
+        "Actor",
+        "Producer",
+        "Writer"
+      ],
+      "about": "Joseph Leonard Gordon-Levitt is an American actor. He has received various accolades, including nominations for the Golden Globe Award for Best Actor – Motion Picture Musical or Comedy for his leading performances in 500 Days of Summer (2009) and 50/50 (2011). He is the founder of the online media platform HitRecord whose projects such as HitRecord on TV (2014–15) and Create Together (2020) won him two Primetime Emmy Awards in the category of Outstanding Interactive Program.",
+      "profilePictureSrc": "https://www.themoviedb.org/t/p/w220_and_h330_face/z2FA8js799xqtfiFjBTicFYdfk.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Elliot Page",
+      "birthday": "February 21, 1987",
+      "ocupation": [
+        "Actor",
+        "Producer",
+        "Writer"
+      ],
+      "about": "Elliot Page (formerly Ellen Page) is a Canadian actor. He[a] has received various accolades, including nominations for an Academy Award, two BAFTA Awards and a Primetime Emmy Award. Page was assigned female at birth, and later publicly came out as a trans man in December 2020. In March 2021, he became the first openly trans man to appear on the cover of Time.",
+      "profilePictureSrc": "https://www.themoviedb.org/t/p/w220_and_h330_face/eCeFgzS8dYHnMfWQT0oQitCrsSz.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Kenneth Branagh",
+      "birthday": "December 10, 1960",
+      "ocupation": [
+        "Actor",
+        "Producer",
+        "Director"
+      ],
+      "about": "Sir Kenneth Charles Branagh is a British actor and filmmaker. Born in Belfast and raised primarily in Reading, Berkshire, Branagh trained at London's Royal Academy of Dramatic Art and has served as its president since 2015. His accolades include an Academy Award, four BAFTAs, two Emmy Awards, a Golden Globe Award, and an Olivier Award. He was appointed a Knight Bachelor in the 2012 Birthday Honours, and was given Freedom of the City in his native Belfast in 2018. In 2020, he was ranked in 20th place on The Irish Times' list of Ireland's greatest film actors.",
+      "profilePictureSrc": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/AbCqqFxNi5w3nDUFdQt0DGMFh5H.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Michelle Yeoh",
+      "birthday": "August 6, 1962",
+      "ocupation": [
+        "Actress",
+        "Producer",
+        "Writer"
+      ],
+      "about": "Michelle Yeoh Choo Kheng is a Malaysian actress. Credited as Michelle Khan in her early films in Hong Kong, she rose to fame in the 1990s after starring in Hong Kong action films where she performed her own stunts. These roles include Yes, Madam (1985); Magnificent Warriors (1987); Police Story 3: Supercop (1992); The Heroic Trio (1993); and Holy Weapon (1993).",
+      "profilePictureSrc": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/6oxvfyrrM3YmhgFZSqc8ESqPZoC.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Jamie Dornan",
+      "birthday": "May 1, 1982",
+      "ocupation": [
+        "Actor",
+        "Producer",
+        "Soundtrack"
+      ],
+      "about": "James Peter Maxwell Dornan is an actor, model, and musician from Northern Ireland. The recipient of two Irish Film and Television Awards, he has been nominated for a BAFTA Television Award and a Golden Globe Award. In 2020, he was named one of Ireland's greatest film actors by The Irish Times.",
+      "profilePictureSrc": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/qmTiAm3LII5moykSriVkJCeysKC.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Joaquin Phoenix",
+      "birthday": "October 28, 1974",
+      "ocupation": [
+        "Actor",
+        "Producer",
+        "Director"
+      ],
+      "about": "Joaquin Rafael Phoenix is an American actor. Known for playing dark and unconventional characters in independent films, he has received various accolades, including an Academy Award, a British Academy Film Award, a Grammy Award, and two Golden Globe Awards. In 2020, The New York Times named him one of the greatest actors of the 21st century.",
+      "profilePictureSrc": "https://www.themoviedb.org/t/p/w220_and_h330_face/e0tlf8wq9tZYCY96bf6gfv46Yc.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Robert De Niro",
+      "birthday": "August 17, 1943",
+      "ocupation": [
+        "Actor",
+        "Producer",
+        "Director"
+      ],
+      "about": "Robert Anthony De Niro is an American actor. Known for his collaborations with Martin Scorsese, he is considered to be one of the most influential actors of his generation. De Niro is the recipient of various accolades, including two Academy Awards, a Golden Globe Award, the Cecil B. DeMille Award, and a Screen Actors Guild Life Achievement Award. In 2009, De Niro received the Kennedy Center Honor, and earned a Presidential Medal of Freedom from U.S. President Barack Obama in 2016.",
+      "profilePictureSrc": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/cT8htcckIuyI1Lqwt1CvD02ynTh.jpg"
+    }
+  ],
+  "actorMovies": [
+    {
+      "id": 1,
+      "actorId": 1,
+      "movieId": 1
+    },
+    {
+      "id": 2,
+      "actorId": 2,
+      "movieId": 1
+    },
+    {
+      "id": 3,
+      "actorId": 3,
+      "movieId": 1
+    },
+    {
+      "id": 4,
+      "actorId": 4,
+      "movieId": 2
+    },
+    {
+      "id": 5,
+      "actorId": 5,
+      "movieId": 2
+    },
+    {
+      "id": 6,
+      "actorId": 6,
+      "movieId": 2
+    },
+    {
+      "id": 7,
+      "actorId": 7,
+      "movieId": 3
+    },
+    {
+      "id": 8,
+      "actorId": 8,
+      "movieId": 3
+    },
+    {
+      "id": 9,
+      "actorId": 1,
+      "movieId": 7
+    },
+    {
+      "id": 10,
+      "actorId": 1,
+      "movieId": 10
+    },
+    {
+      "id": 11,
+      "actorId": 8,
+      "movieId": 10
+    },
+    {
+      "id": 12,
+      "actorId": 1,
+      "movieId": 4
+    },
+    {
+      "id": 13,
+      "actorId": 2,
+      "movieId": 4
+    },
+    {
+      "id": 14,
+      "actorId": 3,
+      "movieId": 4
+    },
+    {
+      "id": 15,
+      "actorId": 1,
+      "movieId": 7
+    },
+    {
+      "id": 16,
+      "actorId": 2,
+      "movieId": 7
+    },
+    {
+      "id": 17,
+      "actorId": 3,
+      "movieId": 7
+    },
+    {
+      "id": 18,
+      "actorId": 4,
+      "movieId": 5
+    },
+    {
+      "id": 19,
+      "actorId": 5,
+      "movieId": 5
+    },
+    {
+      "id": 20,
+      "actorId": 6,
+      "movieId": 5
+    },
+    {
+      "id": 21,
+      "actorId": 4,
+      "movieId": 8
+    },
+    {
+      "id": 22,
+      "actorId": 5,
+      "movieId": 8
+    },
+    {
+      "id": 23,
+      "actorId": 6,
+      "movieId": 8
+    },
+    {
+      "id": 24,
+      "actorId": 7,
+      "movieId": 6
+    },
+    {
+      "id": 25,
+      "actorId": 8,
+      "movieId": 6
+    },
+    {
+      "id": 26,
+      "actorId": 7,
+      "movieId": 9
+    },
+    {
+      "id": 27,
+      "actorId": 8,
+      "movieId": 9
+    }
   ]
 }
