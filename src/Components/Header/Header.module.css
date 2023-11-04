@@ -4,6 +4,7 @@
   left: 0;
   background-color: #090909;
   padding: 15px 0;
+  z-index: 10;
 }
 
 .headerWrapper {
@@ -26,6 +27,7 @@
   font-family: "Russo One", sans-serif;
   font-size: 26px;
   text-decoration: none;
+  filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.6));
 }
 .logoWrapper a span {
   color: #bd0611;
@@ -37,4 +39,10 @@
   list-style-type: none;
   margin: 0;
   gap: 15px 30px;
+}
+.mainNavigation .navList:hover a {
+  opacity: 0.5;
+}
+.mainNavigation .navList:hover a:hover {
+  opacity: 1;
 }

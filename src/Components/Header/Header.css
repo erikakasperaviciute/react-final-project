@@ -1,13 +1,18 @@
 .navItem a {
-  font-weight: 500;
-  color: whitesmoke;
+  font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  color: transparent;
+  background: linear-gradient(90deg, #fff, #fff 50%, #bd0611 50%, #bd0611);
+  background-size: 200% 100%;
+  background-clip: text;
+  transition: 0.4s linear;
 }
 .navItem a:hover {
-  text-decoration: underline;
+  background-position: -100% 0;
 }
 .navItem a.active {
-  color: #e01925;
-  text-decoration: underline;
+  color: #bd0611;
+  background: none;
+  transition: none;
 }
