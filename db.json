@@ -12,7 +12,6 @@
         "Thriller"
       ],
       "rating": 8.8,
-      "amountOfRatings": 2500000,
       "director": [
         "Christopher Nolan"
       ],
@@ -30,7 +29,6 @@
         "Horror"
       ],
       "rating": 6.8,
-      "amountOfRatings": 21000,
       "director": [
         "Kenneth Branagh"
       ],
@@ -48,7 +46,6 @@
         "Thriller"
       ],
       "rating": 8.4,
-      "amountOfRatings": 1400000,
       "director": [
         "Todd Phillips"
       ],
@@ -67,7 +64,6 @@
         "Thriller"
       ],
       "rating": 8.8,
-      "amountOfRatings": 2500000,
       "director": [
         "Christopher Nolan"
       ],
@@ -85,7 +81,6 @@
         "Horror"
       ],
       "rating": 6.8,
-      "amountOfRatings": 21000,
       "director": [
         "Kenneth Branagh"
       ],
@@ -103,7 +98,6 @@
         "Thriller"
       ],
       "rating": 8.4,
-      "amountOfRatings": 1400000,
       "director": [
         "Todd Phillips"
       ],
@@ -122,7 +116,6 @@
         "Thriller"
       ],
       "rating": 8.8,
-      "amountOfRatings": 2500000,
       "director": [
         "Christopher Nolan"
       ],
@@ -140,7 +133,6 @@
         "Horror"
       ],
       "rating": 6.8,
-      "amountOfRatings": 21000,
       "director": [
         "Kenneth Branagh"
       ],
@@ -158,7 +150,6 @@
         "Thriller"
       ],
       "rating": 8.4,
-      "amountOfRatings": 1400000,
       "director": [
         "Todd Phillips"
       ],
@@ -175,13 +166,28 @@
         "Drama",
         "History"
       ],
-      "rating": 8.0,
-      "amountOfRatings": 1400000,
+      "rating": 8,
       "director": [
         "Martin Scorsese"
       ],
       "posterSrc": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/dB6Krk806zeqd0YNp2ngQ9zXteH.jpg",
       "imageSrc": "https://www.themoviedb.org/t/p/original/wCte7A4O2L7CAiw70fbFuvkngA7.jpg"
+    },
+    {
+      "title": "Django Unchained",
+      "description": "With the help of a German bounty-hunter, a freed slave sets out to rescue his wife from a brutal plantation owner in Mississippi.",
+      "year": "2012",
+      "genre": [
+        "Drama",
+        "Western"
+      ],
+      "rating": 8.5,
+      "director": [
+        "Quentin Tarantino"
+      ],
+      "posterSrc": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg",
+      "imageSrc": "https://www.themoviedb.org/t/p/original/lVcI3MOtumvEbOdS1Og7QoV6Lfc.jpg",
+      "id": 11
     }
   ],
   "actors": [

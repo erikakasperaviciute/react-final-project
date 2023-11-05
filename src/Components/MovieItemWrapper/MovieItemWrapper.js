@@ -2,17 +2,7 @@ import styles from "./MovieItemWrapper.module.scss";
 import { Link } from "react-router-dom";
 
 const MovieItemWrapper = ({ data }) => {
-  const {
-    id,
-    title,
-    description,
-    year,
-    genre,
-    rating,
-    amountOfRatings,
-    director,
-    posterSrc,
-  } = data;
+  const { id, title, genre, rating, posterSrc } = data;
 
   const genreElement = genre.map((genreItem) => <li>{genreItem}</li>);
 

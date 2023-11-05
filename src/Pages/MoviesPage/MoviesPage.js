@@ -4,6 +4,7 @@ import axios from "axios";
 import { API_URL } from "../../config";
 import MovieItemWrapper from "../../Components/MovieItemWrapper/MovieItemWrapper";
 import styles from "./MoviesPage.module.scss";
+import { Link } from "react-router-dom";
 
 function MoviesPage() {
   const [movies, setMovies] = useState([]);
@@ -33,7 +34,12 @@ function MoviesPage() {
 
   return (
     <Container>
-      <h1 style={{ color: "whitesmoke" }}>Movies Page</h1>
+      <div className="titleBtnWrapper">
+        <h1 style={{ color: "whitesmoke" }}>Movies</h1>
+        <div className="addBtn">
+          <Link to="/add-movie">Add New Movie</Link>
+        </div>
+      </div>
       <div className={styles.moviesList}>{moviesListElement}</div>
     </Container>
   );
