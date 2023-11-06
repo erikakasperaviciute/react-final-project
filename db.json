@@ -240,16 +240,16 @@
       "profilePictureSrc": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/AbCqqFxNi5w3nDUFdQt0DGMFh5H.jpg"
     },
     {
-      "id": 5,
       "name": "Michelle Yeoh",
       "birthday": "August 6, 1962",
+      "about": "Michelle Yeoh Choo Kheng is a Malaysian actress. Credited as Michelle Khan in her early films in Hong Kong, she rose to fame in the 1990s after starring in Hong Kong action films where she performed her own stunts. These roles include Yes, Madam (1985); Magnificent Warriors (1987); Police Story 3: Supercop (1992); The Heroic Trio (1993); and Holy Weapon (1993).",
+      "profilePictureSrc": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/6oxvfyrrM3YmhgFZSqc8ESqPZoC.jpg",
       "ocupation": [
         "Actress",
         "Producer",
         "Writer"
       ],
-      "about": "Michelle Yeoh Choo Kheng is a Malaysian actress. Credited as Michelle Khan in her early films in Hong Kong, she rose to fame in the 1990s after starring in Hong Kong action films where she performed her own stunts. These roles include Yes, Madam (1985); Magnificent Warriors (1987); Police Story 3: Supercop (1992); The Heroic Trio (1993); and Holy Weapon (1993).",
-      "profilePictureSrc": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/6oxvfyrrM3YmhgFZSqc8ESqPZoC.jpg"
+      "id": 5
     },
     {
       "id": 6,
@@ -286,6 +286,18 @@
       ],
       "about": "Robert Anthony De Niro is an American actor. Known for his collaborations with Martin Scorsese, he is considered to be one of the most influential actors of his generation. De Niro is the recipient of various accolades, including two Academy Awards, a Golden Globe Award, the Cecil B. DeMille Award, and a Screen Actors Guild Life Achievement Award. In 2009, De Niro received the Kennedy Center Honor, and earned a Presidential Medal of Freedom from U.S. President Barack Obama in 2016.",
       "profilePictureSrc": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/cT8htcckIuyI1Lqwt1CvD02ynTh.jpg"
+    },
+    {
+      "name": "Jamie Foxx",
+      "birthday": "December 13, 1967",
+      "about": "Eric Marlon Bishop  known professionally as Jamie Foxx, is an American actor, comedian, and singer. He received acclaim for his portrayal of Ray Charles in the film Ray (2004), winning the Academy Award, BAFTA, Screen Actors Guild Award, and Golden Globe Award for Best Actor. That same year, he was nominated for the Academy Award for Best Supporting Actor for his role in the crime film Collateral.",
+      "profilePictureSrc": "https://www.themoviedb.org/t/p/original/6nyD2q94ASajpenuHecsrA1HFBo.jpg",
+      "ocupation": [
+        "actor",
+        "producer",
+        "writer"
+      ],
+      "id": 10
     }
   ],
   "actorMovies": [
@@ -423,6 +435,16 @@
       "id": 27,
       "actorId": 8,
       "movieId": 9
+    },
+    {
+      "movieId": 11,
+      "actorId": 1,
+      "id": 28
+    },
+    {
+      "movieId": 11,
+      "actorId": 10,
+      "id": 29
     }
   ]
 }

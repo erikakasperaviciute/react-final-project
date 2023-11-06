@@ -13,23 +13,18 @@
     }
     .backHomeBtn {
         transition: 0.6s;
-        a {
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: 600;
-            color: whitesmoke;
-            background-color: mixin.$accent-color;
-            padding: 10px 15px;
-            border-radius: 8px;
-            box-shadow: 7px 7px 5px rgb(54 54 54 / 20%);
-            transition: 0.6s;
-        }
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: whitesmoke;
+        background-color: mixin.$accent-color;
+        padding: 10px 15px;
+        border-radius: 8px;
+        box-shadow: 7px 7px 5px rgb(54 54 54 / 20%);
         &:hover {
-            scale: 1.05;
-            a {
-                background-color: whitesmoke;
-                color: red;
-            }
+            transform: scale(1.05);
+            background-color: whitesmoke;
+            color: mixin.$accent-color;
         }
     }
 }

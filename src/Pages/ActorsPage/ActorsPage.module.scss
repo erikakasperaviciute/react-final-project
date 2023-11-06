@@ -1,0 +1,7 @@
+.actorsList {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    justify-items: center;
+    padding-bottom: 100px;
+}

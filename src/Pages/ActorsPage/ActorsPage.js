@@ -3,6 +3,9 @@ import Container from "../../Components/Container/Container";
 import axios from "axios";
 import { API_URL } from "../../config";
 import ActorItemWrapper from "../../Components/ActorItemWrapper/ActorItemWrapper";
+import styles from "./ActorsPage.module.scss";
+import { Link } from "react-router-dom";
+import { BallTriangle } from "react-loader-spinner";
 
 function ActorsPage() {
   const [actors, setActors] = useState([]);
@@ -19,7 +22,10 @@ function ActorsPage() {
   if (actors.length === 0) {
     return (
       <Container>
-        <span>Loading</span>
+        <BallTriangle
+          wrapperStyle={{ justifyContent: "center", marginTop: "200px" }}
+          color="#bd0611"
+        />
       </Container>
     );
   }
@@ -30,10 +36,13 @@ function ActorsPage() {
 
   return (
     <Container>
-      <h1>Actors</h1>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)" }}>
-        {actorsListElement}
+      <div className="titleBtnWrapper">
+        <h1>Actors</h1>
+        <Link to="/add-actor" className="addBtn">
+          Add New Actor
+        </Link>
       </div>
+      <div className={styles.actorsList}>{actorsListElement}</div>
     </Container>
   );
 }

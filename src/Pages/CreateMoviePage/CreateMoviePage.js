@@ -3,10 +3,12 @@ import { API_URL } from "../../config";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Container from "../../Components/Container/Container";
-import { TextField } from "@mui/material";
+import { FormHelperText, TextField } from "@mui/material";
 import styles from "./CreateMoviePage.module.scss";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { brown } from "@mui/material/colors";
+import isUrl from "is-url";
+import { toast } from "react-toastify";
 
 const theme = createTheme({
   palette: {
@@ -27,14 +29,85 @@ function CreateMoviePage() {
   const [imageSrc, setImageSrc] = useState("");
   const [year, setYear] = useState("");
 
+  const [titleError, setTitleError] = useState("");
+  const [descriptionError, setDescriptionError] = useState("");
+  const [yearError, setYearError] = useState("");
+  const [posterSrcError, setPosterSrcErorr] = useState("");
+  const [imageSrcError, setImageSrcErorr] = useState("");
+
   const navigate = useNavigate();
 
-  const titleHandler = (e) => setTitle(e.target.value);
-  const descriptionHandler = (e) => setDescription(e.target.value);
   const ratingHandler = (e) => setRating(e.target.value);
-  const posterSrcHandler = (e) => setPosterSrc(e.target.value);
-  const imageSrcHandler = (e) => setImageSrc(e.target.value);
-  const yearHandler = (e) => setYear(e.target.value);
+
+  const titleHandler = (e) => {
+    const titleValue = e.target.value;
+    setTitle(titleValue);
+    setTitleError("");
+
+    if (!titleValue) {
+      setTitleError("Title is required");
+    } else if (titleValue.length < 3) {
+      setTitleError("Title must be at least 3 characters long");
+    }
+  };
+
+  const descriptionHandler = (e) => {
+    const descriptionValue = e.target.value;
+    setDescription(descriptionValue);
+    setDescriptionError("");
+
+    if (!descriptionValue) {
+      setDescriptionError("Storyline is required");
+    } else if (descriptionValue.length < 15) {
+      setDescriptionError("Storyline must be at least 15 characters long");
+    }
+  };
+
+  const yearHandler = (e) => {
+    const yearValue = e.target.value;
+    setYear(yearValue);
+    setYearError("");
+
+    if (!yearValue) {
+      setYearError("Release year is required");
+    } else if (yearValue.length !== 4) {
+      setYearError("Please check year format. It should be YYYY");
+    } else {
+      const currentYear = new Date().getFullYear();
+      const minYear = 1874;
+      const maxYear = currentYear;
+
+      if (yearValue < minYear || yearValue > maxYear) {
+        setYearError(
+          `Please check entered value. Release year must be between ${minYear} and ${maxYear}`
+        );
+      }
+    }
+  };
+
+  const posterSrcHandler = (e) => {
+    const posterSrcValue = e.target.value;
+    setPosterSrc(posterSrcValue);
+    setPosterSrcErorr("");
+
+    if (!posterSrcValue) {
+      setPosterSrcErorr("Poster image link is required");
+    } else if (!isUrl(posterSrcValue)) {
+      setPosterSrcErorr("Please enter a valid URL");
+    }
+  };
+
+  const imageSrcHandler = (e) => {
+    const imageSrcValue = e.target.value;
+    setImageSrc(imageSrcValue);
+    setImageSrcErorr("");
+
+    if (!imageSrcValue) {
+      setImageSrcErorr("Image link is required");
+    } else if (!isUrl(imageSrcValue)) {
+      setImageSrcErorr("Please enter a valid URL");
+    }
+  };
 
   const genreHandler = (e) => {
     const enteredGenreValue = e.target.value;
@@ -83,9 +156,10 @@ function CreateMoviePage() {
     const res = await axios.post(`${API_URL}/movies`, newMovie);
 
     if (res.statusText === "Created") {
+      toast.success(`New movie was created`);
       navigate(`/movies/${res.data.id}`);
     } else {
-      console.error("Something wrong");
+      toast.error("Oops..! Something went wrong");
     }
   };
 
@@ -106,6 +180,13 @@ function CreateMoviePage() {
               name="title"
               value={title}
               onChange={titleHandler}
+              helperText={
+                titleError ? (
+                  <FormHelperText style={{ color: "red" }}>
+                    {titleError}
+                  </FormHelperText>
+                ) : null
+              }
               InputProps={{
                 style: {
                   color: "black",
@@ -125,6 +206,13 @@ function CreateMoviePage() {
               name="description"
               value={description}
               onChange={descriptionHandler}
+              helperText={
+                descriptionError ? (
+                  <FormHelperText style={{ color: "red" }}>
+                    {descriptionError}
+                  </FormHelperText>
+                ) : null
+              }
               InputProps={{
                 style: {
                   color: "black",
@@ -141,10 +229,17 @@ function CreateMoviePage() {
               color="primary"
               type="number"
               name="year"
-              format="YYYY"
+              placeholder="YYYY"
               required
               value={year}
               onChange={yearHandler}
+              helperText={
+                yearError ? (
+                  <FormHelperText style={{ color: "red" }}>
+                    {yearError}
+                  </FormHelperText>
+                ) : null
+              }
               InputProps={{
                 style: {
                   color: "black",
@@ -159,7 +254,6 @@ function CreateMoviePage() {
               size="small"
               color="primary"
               multiline
-              required
               name="director"
               value={director}
               onChange={directorHandler}
@@ -213,9 +307,18 @@ function CreateMoviePage() {
               size="small"
               color="primary"
               required
+              multiline
+              minRows={2}
               name="posterSrc"
               value={posterSrc}
               onChange={posterSrcHandler}
+              helperText={
+                posterSrcError ? (
+                  <FormHelperText style={{ color: "red" }}>
+                    {posterSrcError}
+                  </FormHelperText>
+                ) : null
+              }
               InputProps={{
                 style: {
                   color: "black",
@@ -231,8 +334,17 @@ function CreateMoviePage() {
               color="primary"
               name="imageSrc"
               required
+              multiline
+              minRows={2}
               value={imageSrc}
               onChange={imageSrcHandler}
+              helperText={
+                imageSrcError ? (
+                  <FormHelperText style={{ color: "red" }}>
+                    {imageSrcError}
+                  </FormHelperText>
+                ) : null
+              }
               InputProps={{
                 style: {
                   color: "black",

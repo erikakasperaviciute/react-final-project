@@ -14,11 +14,11 @@
 
 .addBtn:hover {
   background-color: #bd0611;
-  scale: 1.05;
+  transform: scale(1.05);
 
 }
 
-.addBtn a {
+a.addBtn {
   color: whitesmoke;
   text-decoration: none;
   text-transform: uppercase;

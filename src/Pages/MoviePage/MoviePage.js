@@ -4,6 +4,10 @@ import axios from "axios";
 import { API_URL } from "../../config";
 import Container from "../../Components/Container/Container";
 import styles from "./MoviePage.module.scss";
+import ActorSelect from "../../Components/ActorSelect/ActorSelect";
+import { toast } from "react-toastify";
+import firstLetterUpperCase from "../../utils";
+import { BallTriangle } from "react-loader-spinner";
 
 function MoviePage() {
   const { id } = useParams();
@@ -30,14 +34,34 @@ function MoviePage() {
     getMovieActors();
   }, [id]);
 
+  const updateActors = async () => {
+    const { data } = await axios(
+      `${API_URL}/actorMovies?movieId=${id}&_expand=actor`
+    );
+    setActors(data);
+  };
+
+  const deleteMovieHandler = async () => {
+    const res = await axios.delete(`${API_URL}/movies/${id}`);
+    navigate("/movies");
+    toast.success("Movie was successfully deleted");
+  };
+
   if (!movie) {
-    return <h2>Loading</h2>;
+    return (
+      <Container>
+        <BallTriangle
+          wrapperStyle={{ justifyContent: "center", marginTop: "200px" }}
+          color="#bd0611"
+        />
+      </Container>
+    );
   }
 
   const storyLineElement = movie.description && (
     <div>
       <h2>Storyline</h2>
-      <p>{movie.description}</p>
+      <p>{firstLetterUpperCase(movie.description)}</p>
     </div>
   );
 
@@ -60,13 +84,15 @@ function MoviePage() {
   }
 
   const directorElement = movie.director.map((movieDirector, index) => (
-    <li key={movie.director[index]}>{movieDirector}</li>
+    <li key={index}>{firstLetterUpperCase(movieDirector)}</li>
   ));
 
   const actorsElement = actors.map((actor) => (
     <Link key={actor.id} to={`/actors/${actor.actorId}`}>
       <div>
-        <img src={actor.actor.profilePictureSrc} alt={actor.actor.name} />
+        {actor.actor.profilePictureSrc && (
+          <img src={actor.actor.profilePictureSrc} alt={actor.actor.name} />
+        )}
         <h3>{actor.actor.name}</h3>
       </div>
     </Link>
@@ -95,8 +121,10 @@ function MoviePage() {
           </div>
         </div>
         <h2>Stars</h2>
+        <ActorSelect movieId={id} updateActors={updateActors} />
         <div className={styles.actorsWrapper}>{actorsElement}</div>
       </div>
+      <button onClick={deleteMovieHandler}>Delete movie</button>
     </Container>
   );
 }

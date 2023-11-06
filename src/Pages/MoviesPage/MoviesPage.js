@@ -5,6 +5,7 @@ import { API_URL } from "../../config";
 import MovieItemWrapper from "../../Components/MovieItemWrapper/MovieItemWrapper";
 import styles from "./MoviesPage.module.scss";
 import { Link } from "react-router-dom";
+import { BallTriangle } from "react-loader-spinner";
 
 function MoviesPage() {
   const [movies, setMovies] = useState([]);
@@ -14,8 +15,6 @@ function MoviesPage() {
     setMovies(data);
   };
 
-  console.log(movies);
-
   useEffect(() => {
     getMovies();
   }, []);
@@ -23,7 +22,10 @@ function MoviesPage() {
   if (movies.length === 0) {
     return (
       <Container>
-        <span>Loading</span>
+        <BallTriangle
+          wrapperStyle={{ justifyContent: "center", marginTop: "200px" }}
+          color="#bd0611"
+        />
       </Container>
     );
   }
@@ -35,10 +37,11 @@ function MoviesPage() {
   return (
     <Container>
       <div className="titleBtnWrapper">
-        <h1 style={{ color: "whitesmoke" }}>Movies</h1>
-        <div className="addBtn">
-          <Link to="/add-movie">Add New Movie</Link>
-        </div>
+        <h1>Movies</h1>
+
+        <Link to="/add-movie" className="addBtn">
+          Add New Movie
+        </Link>
       </div>
       <div className={styles.moviesList}>{moviesListElement}</div>
     </Container>

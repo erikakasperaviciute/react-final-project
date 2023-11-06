@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const MovieItemWrapper = ({ data }) => {
   const { id, title, genre, rating, posterSrc } = data;
 
-  const genreElement = genre.map((genreItem) => <li>{genreItem}</li>);
+  const genreElement = genre.map((genreItem, index) => <li>{genreItem}</li>);
 
   return (
     <div className={styles.movieItem}>
