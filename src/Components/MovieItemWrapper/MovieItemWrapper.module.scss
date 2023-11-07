@@ -5,9 +5,13 @@
     width: 200px;
     position: relative;
     border-radius: 8px;
+    transition: 0.5s;
+    @include mixin.sm-screen {
+        width: 250px;
+    }
     &:hover {
         cursor: pointer;
-        scale: 1.05;
+        transform: scale(1.05);
     }
     a {
         color: black;
@@ -20,8 +24,13 @@
             object-fit: cover;
             border-radius: 8px 8px 0 0;
             box-shadow: 5px 5px 5px rgb(54 54 54 / 20%);
+            @include mixin.sm-screen {
+                height: 350px;
+            }
         }
         span {
+            font-family: "Russo One", sans-serif;
+            font-size: 15px;
             min-width: 65px;
             position: absolute;
             top: 5px;
@@ -30,6 +39,9 @@
             left: 150px;
             background-color: black;
             color: white;
+            @include mixin.sm-screen {
+                left: 200px;
+            }
         }
     }
     .titleWrapper {

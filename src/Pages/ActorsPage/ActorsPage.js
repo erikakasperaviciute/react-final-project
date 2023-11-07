@@ -9,23 +9,38 @@ import { BallTriangle } from "react-loader-spinner";
 
 function ActorsPage() {
   const [actors, setActors] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   const getActors = async () => {
-    const { data } = await axios(`${API_URL}/actors`);
+    const { data } = await axios(`${API_URL}/actors?_sort=id&_order=desc`);
     setActors(data);
+    setLoading(false);
   };
 
   useEffect(() => {
     getActors();
   }, []);
 
-  if (actors.length === 0) {
+  if (loading) {
     return (
       <Container>
         <BallTriangle
           wrapperStyle={{ justifyContent: "center", marginTop: "200px" }}
           color="#bd0611"
         />
+      </Container>
+    );
+  }
+
+  if (actors.length === 0) {
+    return (
+      <Container>
+        <div className="titleBtnWrapper">
+          <h1>No actors yet...</h1>
+          <Link to="/add-actor" className="addBtn">
+            Add New Actor
+          </Link>
+        </div>
       </Container>
     );
   }

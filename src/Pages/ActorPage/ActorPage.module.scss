@@ -1,3 +1,4 @@
+@use "../../mixin.scss";
 .actorWrapper {
     h2 {
         font-size: 28px;
@@ -5,6 +6,49 @@
     }
     h1 {
         font-size: 36px;
+        margin-top: 0;
+    }
+    .btnAndNameWrapper {
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .btnWrapper {
+            display: flex;
+            gap: 8px;
+            .deleteBtn {
+                margin-left: 8px;
+                font-size: 22px;
+                color: whitesmoke;
+                border: none;
+                padding: 8px;
+                border-radius: 8px;
+                background-color: #323232;
+                box-shadow: 0px 0px 10px rgb(180 180 180 / 30%);
+                transition: 0.5s;
+                cursor: pointer;
+                &:hover {
+                    background-color: mixin.$accent-color;
+                    transform: scale(1.05);
+                }
+            }
+            .editBtn {
+                text-decoration: none;
+                color: whitesmoke;
+                font-size: 22px;
+                padding: 8px;
+                border-radius: 8px;
+                background-color: #323232;
+                box-shadow: 0px 0px 10px rgb(180 180 180 / 30%);
+                transition: 0.5s;
+                cursor: pointer;
+                &:hover {
+                    background-color: whitesmoke;
+                    color: black;
+                    transform: scale(1.05);
+                }
+            }
+        }
     }
     .actorMainInfoWrapper {
         display: flex;
@@ -33,9 +77,10 @@
         a {
             text-decoration: none;
             color: whitesmoke;
+            transition: 0.5s;
             &:hover {
                 cursor: pointer;
-                scale: 1.05;
+                transform: scale(1.05);
             }
             .movieItem {
                 width: 150px;

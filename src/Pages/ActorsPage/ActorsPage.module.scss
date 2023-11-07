@@ -1,7 +1,22 @@
+@use "../../mixin.scss";
 .actorsList {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 30px;
     justify-items: center;
     padding-bottom: 100px;
+    @include mixin.xl-screen {
+        grid-template-columns: repeat(4, 200px);
+        justify-content: center;
+    }
+    @include mixin.lg-screen {
+        grid-template-columns: repeat(3, 200px);
+    }
+    @include mixin.m-screen {
+        grid-template-columns: repeat(2, 200px);
+    }
+    @include mixin.sm-screen {
+        grid-template-columns: repeat(2, 150px);
+        row-gap: 16px;
+    }
 }

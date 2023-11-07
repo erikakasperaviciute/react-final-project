@@ -1,0 +1,147 @@
+@use "../../mixin.scss";
+.ContentWrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    gap: 30px;
+    .topMoviesContainer,
+    .newestMoviesContainer {
+        h2 {
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 32px;
+        }
+    }
+    .topMoviesWrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        @include mixin.m-screen {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .movieItem {
+            transition: 0.5s;
+            &:hover {
+                transform: scale(1.02);
+            }
+            &:first-of-type {
+                grid-area: 1/1/2/3;
+                @include mixin.m-screen {
+                    grid-area: 1/1/2/2;
+                }
+            }
+            a {
+                text-decoration: none;
+            }
+            .movieWrapper {
+                position: relative;
+                img {
+                    max-width: 100%;
+                    object-fit: cover;
+                    box-shadow: 5px 5px 5px rgb(54 54 54 / 20%);
+                }
+                .overlayItems {
+                    position: absolute;
+                    bottom: 30px;
+                    left: 30px;
+                    @include mixin.lg-screen-additional {
+                        bottom: 15px;
+                    }
+                    h3 {
+                        font-weight: 500;
+                        margin-bottom: 8px;
+                        color: whitesmoke;
+                        text-transform: uppercase;
+                        mix-blend-mode: luminosity;
+                        font-size: 24px;
+                        @include mixin.lg-screen-additional {
+                            font-size: 22px;
+                        }
+                        @include mixin.xs-screen {
+                            font-size: 18px;
+                        }
+                    }
+                    ul {
+                        padding-left: 0;
+                        margin: 0;
+                        list-style-type: none;
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 8px;
+                        margin-bottom: 10px;
+                        color: whitesmoke;
+                        @include mixin.xs-screen {
+                            gap: 5px;
+                        }
+                        li {
+                            background-color: mixin.$accent-color;
+                            padding: 5px;
+                            border-radius: 5px;
+                            text-transform: uppercase;
+                            font-size: 12px;
+                            font-weight: 500;
+                            @include mixin.lg-screen-additional {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                    .ratingWrapper {
+                        font-size: 22px;
+                        color: whitesmoke;
+                        mix-blend-mode: luminosity;
+                        opacity: 0.8;
+                        font-family: "Russo One";
+                        @include mixin.lg-screen-additional {
+                            font-size: 18px;
+                        }
+                        span {
+                            font-size: 14px;
+                            opacity: 0.6;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .newestMoviesWrapper {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 30px;
+        @include mixin.xl-screen {
+            grid-template-columns: repeat(4, 200px);
+            justify-content: center;
+        }
+        @include mixin.lg-screen {
+            grid-template-columns: repeat(3, 200px);
+        }
+        @include mixin.m-screen {
+            grid-template-columns: repeat(2, 200px);
+            row-gap: 20px;
+        }
+        @include mixin.sm-screen {
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+    }
+    .AllMoviesBtn {
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        color: whitesmoke;
+        background-color: mixin.$accent-color;
+        padding: 10px 15px;
+        border-radius: 8px;
+        box-shadow: 7px 7px 5px rgba(54, 54, 54, 0.2);
+        transition: 0.5s;
+        cursor: pointer;
+        &:hover {
+            background-color: whitesmoke;
+            color: mixin.$accent-color;
+            transform: scale(1.05);
+        }
+    }
+}

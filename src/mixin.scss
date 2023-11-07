@@ -1,3 +1,39 @@
 $primary-color: #dedede;
 $secondary-color: #090909;
 $accent-color: #bd0611;
+
+@mixin xl-screen {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin lg-screen {
+    @media (max-width: 945px) {
+        @content;
+    }
+}
+
+@mixin lg-screen-additional {
+    @media (max-width: 900px) {
+        @content;
+    }
+}
+
+@mixin m-screen {
+    @media (max-width: 715px) {
+        @content;
+    }
+}
+
+@mixin sm-screen {
+    @media (max-width: 505px) {
+        @content;
+    }
+}
+
+@mixin xs-screen {
+    @media (max-width: 400px) {
+        @content;
+    }
+}

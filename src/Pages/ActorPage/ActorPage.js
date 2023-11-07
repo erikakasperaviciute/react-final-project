@@ -7,6 +7,7 @@ import styles from "./ActorPage.module.scss";
 import { toast } from "react-toastify";
 import firstLetterUpperCase from "../../utils";
 import { BallTriangle } from "react-loader-spinner";
+import { GoTrash, GoPencil } from "react-icons/go";
 
 function ActorPage() {
   const { id } = useParams();
@@ -82,7 +83,17 @@ function ActorPage() {
   return (
     <Container>
       <div className={styles.actorWrapper}>
-        <h1>{actor.name}</h1>
+        <div className={styles.btnAndNameWrapper}>
+          <h1>{actor.name}</h1>
+          <div className={styles.btnWrapper}>
+            <button className={styles.deleteBtn} onClick={deleteActorHandler}>
+              <GoTrash />
+            </button>
+            <Link className={styles.editBtn} to={`/edit-actor/${id}`}>
+              <GoPencil />
+            </Link>
+          </div>
+        </div>
         <div className={styles.actorMainInfoWrapper}>
           {profilePicElement}
           <div>
@@ -95,8 +106,6 @@ function ActorPage() {
         <h2>Played at</h2>
         <div className={styles.moviesWrapper}>{moviesElement}</div>
       </div>
-      <button onClick={deleteActorHandler}>Delete Actor</button>
-      <Link to={`/edit-actor/${id}`}>Edit Actor</Link>
     </Container>
   );
 }
