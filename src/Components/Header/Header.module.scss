@@ -1,12 +1,35 @@
 @use "../../mixin.scss";
 
+.burgerBtn {
+    display: none;
+    font-size: 24px;
+    border: none;
+    color: whitesmoke;
+    background: transparent;
+    margin: 6px 0 0 70px;
+}
+
+.openMenu .burgerBtn {
+    display: flex;
+}
+
+.openMenu .navList {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: mixin.$secondary-color;
+    padding-bottom: 20px;
+}
 .navHeader {
     position: sticky;
     top: 0;
     left: 0;
     background-color: mixin.$secondary-color;
     padding: 15px 0;
-    z-index: 10;
+    z-index: 100;
 }
 
 .headerWrapper {
@@ -42,11 +65,24 @@
         list-style-type: none;
         margin: 0;
         gap: 15px 30px;
+        @include mixin.sm-screen {
+            display: none;
+        }
         &:hover a {
             opacity: 0.5;
         }
         &:hover a:hover {
             opacity: 1;
         }
+    }
+}
+
+@include mixin.sm-screen {
+    .burgerBtn {
+        display: block;
+    }
+
+    .openMenu .navList {
+        display: flex;
     }
 }

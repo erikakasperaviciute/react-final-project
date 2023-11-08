@@ -9,6 +9,9 @@
         width: 100%;
         height: 70vh;
         object-fit: cover;
+        @include mixin.sm-screen {
+            height: 50vh;
+        }
     }
     .movieInfoWrapper {
         display: grid;
@@ -16,6 +19,10 @@
         align-items: start;
         margin-top: 25px;
         gap: 30px;
+        @include mixin.lg-screen {
+            display: flex;
+            flex-direction: column-reverse;
+        }
         h2 {
             font-size: 28px;
             margin-top: 0;
@@ -32,12 +39,18 @@
             flex-wrap: wrap;
             flex-direction: row;
             gap: 8px;
+
             ul {
                 padding-left: 0;
                 margin: 0;
                 list-style: none;
 
                 font-weight: 300;
+                @include mixin.lg-screen {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 8px;
+                }
             }
         }
     }
@@ -45,32 +58,63 @@
         display: flex;
         gap: 30px;
         flex-wrap: wrap;
-
-        a {
-            text-decoration: none;
-            color: whitesmoke;
+        padding-bottom: 100px;
+        margin-top: 5px;
+        @include mixin.m-screen {
+            gap: 20px;
+        }
+        @include mixin.xs-screen {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .actorItem {
+            transition: 0.5s;
+            position: relative;
             &:hover {
                 cursor: pointer;
-                scale: 1.05;
+                transform: scale(1.05);
             }
-            h3 {
-                text-transform: uppercase;
-                font-size: 14px;
-                font-weight: 600;
-                padding: 0 5px;
+            a {
+                text-decoration: none;
+                color: whitesmoke;
+
+                h3 {
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-weight: 600;
+                    padding: 0 5px;
+                }
+                img {
+                    width: 200px;
+                    height: 250px;
+                    object-fit: cover;
+                    box-shadow: 7px 7px 5px rgb(54 54 54 / 20%);
+                    border-radius: 8px;
+                    @include mixin.xs-screen {
+                        width: 160px;
+                        height: 240px;
+                    }
+                }
             }
-            img {
-                width: 200px;
-                height: 250px;
-                object-fit: cover;
-                box-shadow: 7px 7px 5px rgb(54 54 54 / 20%);
-                border-radius: 8px;
+            .deleteBtn {
+                position: absolute;
+                top: 5px;
+                right: 10px;
+                font-size: 20px;
+                padding: 8px 8px 3px;
             }
         }
     }
     .overlayItems {
         position: absolute;
         top: 400px;
+        @include mixin.lg-screen {
+            top: 370px;
+        }
+        @include mixin.sm-screen {
+            top: 220px;
+        }
+
         h1 {
             color: whitesmoke;
             text-transform: uppercase;
@@ -78,6 +122,20 @@
             font-size: 38px;
             mix-blend-mode: luminosity;
             opacity: 0.8;
+            @include mixin.lg-screen {
+                margin-bottom: 20px;
+            }
+            @include mixin.m-screen {
+                margin-left: 15px;
+                padding-right: 5px;
+                margin-top: 0;
+            }
+            @include mixin.sm-screen {
+                font-size: 32px;
+            }
+            @include mixin.xs-screen {
+                font-size: 26px;
+            }
         }
         ul {
             padding: 0;
@@ -86,6 +144,12 @@
             display: flex;
             gap: 8px;
             margin-bottom: 40px;
+            @include mixin.lg-screen {
+                margin-bottom: 20px;
+            }
+            @include mixin.m-screen {
+                margin-left: 15px;
+            }
             li {
                 background-color: mixin.$accent-color;
                 padding: 5px;
@@ -101,10 +165,106 @@
             mix-blend-mode: luminosity;
             opacity: 0.7;
             font-family: "Russo One";
+            @include mixin.m-screen {
+                margin-left: 15px;
+            }
+            @include mixin.sm-screen {
+                font-size: 24px;
+            }
+            @include mixin.xs-screen {
+                font-size: 18px;
+            }
             span {
                 font-size: 18px;
                 opacity: 0.6;
+                @include mixin.xs-screen {
+                    font-size: 16px;
+                }
             }
         }
     }
+    .trailerForm {
+        display: flex;
+        gap: 8px;
+        align-items: flex-start;
+        margin-bottom: 15px;
+        @include mixin.m-screen {
+            flex-direction: column;
+            max-width: 400px;
+            align-items: normal;
+        }
+        .AddBtn {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+            color: whitesmoke;
+            border: 0;
+            padding: 14px;
+            background-color: #323232;
+            box-shadow: 0px 0px 10px rgb(180 180 180 / 30%);
+            border-radius: 8px;
+            transition: 0.5s;
+            @include mixin.m-screen {
+                width: fit-content;
+            }
+            &:hover {
+                background-color: #bd0611;
+                scale: 1.05;
+            }
+        }
+    }
+
+    .trailerItem {
+        display: flex;
+        align-items: flex-start;
+
+        .videoContainer {
+            width: 650px;
+            @include mixin.lg-screen-additional {
+                width: 550px;
+            }
+        }
+    }
+}
+.deleteBtn {
+    margin-left: 8px;
+    font-size: 22px;
+    color: whitesmoke;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #323232;
+    box-shadow: 0px 0px 10px rgb(180 180 180 / 30%);
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover {
+        background-color: mixin.$accent-color;
+        transform: scale(1.05);
+    }
+}
+
+.editBtn {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 22px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #323232;
+    box-shadow: 0px 0px 10px rgb(180 180 180 / 30%);
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover {
+        background-color: whitesmoke;
+        color: black;
+        transform: scale(1.05);
+    }
+}
+
+.buttonsWrapper {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    z-index: 10;
+    right: 10px;
+    top: 10px;
 }

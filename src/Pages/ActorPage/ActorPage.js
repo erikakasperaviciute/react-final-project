@@ -4,6 +4,10 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { API_URL } from "../../config";
 import styles from "./ActorPage.module.scss";
+import { toast } from "react-toastify";
+import firstLetterUpperCase from "../../utils";
+import { BallTriangle } from "react-loader-spinner";
+import { GoTrash, GoPencil } from "react-icons/go";
 
 function ActorPage() {
   const { id } = useParams();
@@ -11,8 +15,6 @@ function ActorPage() {
 
   const [actor, setActor] = useState(null);
   const [movies, setMovies] = useState([]);
-
-  console.log(movies);
 
   useEffect(() => {
     const getActor = async () => {
@@ -33,8 +35,21 @@ function ActorPage() {
   }, [id]);
 
   if (!actor) {
-    return <h2>Loading</h2>;
+    return (
+      <Container>
+        <BallTriangle
+          wrapperStyle={{ justifyContent: "center", marginTop: "200px" }}
+          color="#bd0611"
+        />
+      </Container>
+    );
   }
+
+  const deleteActorHandler = async () => {
+    const res = await axios.delete(`${API_URL}/actors/${id}`);
+    navigate("/actors");
+    toast.success("Actor was successfully deleted");
+  };
 
   const profilePicElement = actor.profilePictureSrc && (
     <img src={actor.profilePictureSrc} alt={actor.name} />
@@ -47,9 +62,13 @@ function ActorPage() {
     </div>
   );
 
-  const ocupationElement = actor.ocupation.map((ocupationItem, index) => (
-    <li key={actor.ocupation[index]}>{ocupationItem}</li>
-  ));
+  const ocupationElement =
+    actor.ocupation &&
+    actor.ocupation.map((ocupationItem, index) => (
+      <li key={actor.ocupation[index]}>
+        {firstLetterUpperCase(ocupationItem)}
+      </li>
+    ));
 
   const moviesElement = movies.map((movie) => (
     <Link key={movie.id} to={`/movies/${movie.movieId}`}>
@@ -64,13 +83,22 @@ function ActorPage() {
   return (
     <Container>
       <div className={styles.actorWrapper}>
-        <h1>{actor.name}</h1>
+        <div className={styles.btnAndNameWrapper}>
+          <h1>{actor.name}</h1>
+          <div className={styles.btnWrapper}>
+            <button className={styles.deleteBtn} onClick={deleteActorHandler}>
+              <GoTrash />
+            </button>
+            <Link className={styles.editBtn} to={`/edit-actor/${id}`}>
+              <GoPencil />
+            </Link>
+          </div>
+        </div>
         <div className={styles.actorMainInfoWrapper}>
           {profilePicElement}
           <div>
             <ul>{ocupationElement}</ul>
-            <span>Born on: {actor.birthday}</span>
-
+            {actor.birthday && <span>Born on: {actor.birthday}</span>}
             {aboutElement}
           </div>
         </div>

@@ -1,8 +1,13 @@
+@use "../../mixin.scss";
 .actorItem {
     width: 200px;
+    transition: 0.5s;
+    @include mixin.sm-screen {
+        width: 150px;
+    }
     &:hover {
         cursor: pointer;
-        scale: 1.05;
+        transform: scale(1.05);
     }
     a {
         text-decoration: none;
@@ -27,6 +32,9 @@
             gap: 5px;
             padding: 0;
             margin: 8px 0;
+            @include mixin.sm-screen {
+                flex-wrap: wrap;
+            }
             li {
                 font-size: 14px;
                 &:not(:last-child)::after {

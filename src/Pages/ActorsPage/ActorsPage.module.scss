@@ -1,6 +1,5 @@
 @use "../../mixin.scss";
-
-.moviesList {
+.actorsList {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 30px;
@@ -17,6 +16,7 @@
         grid-template-columns: repeat(2, 200px);
     }
     @include mixin.sm-screen {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 150px);
+        row-gap: 16px;
     }
 }

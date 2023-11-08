@@ -11,8 +11,7 @@
         "Sci-Fi",
         "Thriller"
       ],
-      "rating": 8.8,
-      "amountOfRatings": 2500000,
+      "rating": "8.8",
       "director": [
         "Christopher Nolan"
       ],
@@ -29,8 +28,7 @@
         "Drama",
         "Horror"
       ],
-      "rating": 6.8,
-      "amountOfRatings": 21000,
+      "rating": "6.8",
       "director": [
         "Kenneth Branagh"
       ],
@@ -47,8 +45,7 @@
         "Drama",
         "Thriller"
       ],
-      "rating": 8.4,
-      "amountOfRatings": 1400000,
+      "rating": "8.4",
       "director": [
         "Todd Phillips"
       ],
@@ -66,8 +63,7 @@
         "Sci-Fi",
         "Thriller"
       ],
-      "rating": 8.8,
-      "amountOfRatings": 2500000,
+      "rating": "8.8",
       "director": [
         "Christopher Nolan"
       ],
@@ -75,40 +71,38 @@
       "imageSrc": "https://www.themoviedb.org/t/p/original/s3TBrRGB1iav7gFOCNx3H31MoES.jpg"
     },
     {
-      "id": 5,
       "title": "A Haunting in Venice",
       "description": "In post-World War II Venice, Poirot, now retired and living in his own exile, reluctantly attends a seance. But when one of the guests is murdered, it is up to the former detective to once again uncover the killer.",
-      "year": 2023,
       "genre": [
         "Crime",
         "Drama",
         "Horror"
       ],
-      "rating": 6.8,
-      "amountOfRatings": 21000,
+      "rating": "6.8",
       "director": [
         "Kenneth Branagh"
       ],
       "posterSrc": "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/261/2023/08/22115134/1Xgjl22MkAZQUavvOeBqRehrvqO-scaled.jpg",
-      "imageSrc": "https://arconline.co.uk/app/uploads/2023/09/a-haunting-in-venice.jpg"
+      "imageSrc": "https://arconline.co.uk/app/uploads/2023/09/a-haunting-in-venice.jpg",
+      "year": "2023",
+      "id": 5
     },
     {
-      "id": 6,
       "title": "Joker",
       "description": "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.",
-      "year": 2019,
       "genre": [
         "Crime",
         "Drama",
         "Thriller"
       ],
-      "rating": 8.4,
-      "amountOfRatings": 1400000,
+      "rating": "8.4",
       "director": [
         "Todd Phillips"
       ],
       "posterSrc": "https://www.joblo.com/wp-content/uploads/2019/08/joker-poster-main2-1.jpg",
-      "imageSrc": "https://www.themoviedb.org/t/p/original/f5F4cRhQdUbyVbB5lTNCwUzD6BP.jpg"
+      "imageSrc": "https://www.themoviedb.org/t/p/original/f5F4cRhQdUbyVbB5lTNCwUzD6BP.jpg",
+      "year": 2019,
+      "id": 6
     },
     {
       "id": 7,
@@ -121,31 +115,12 @@
         "Sci-Fi",
         "Thriller"
       ],
-      "rating": 8.8,
-      "amountOfRatings": 2500000,
+      "rating": "8.8",
       "director": [
         "Christopher Nolan"
       ],
       "posterSrc": "https://images.squarespace-cdn.com/content/v1/5ec686197f8b2976074846c2/1618894366055-XO4Q20SQ906L3V7N2IW6/INCEPTION+poster+CMYK.jpg?format=1000w",
       "imageSrc": "https://www.themoviedb.org/t/p/original/s3TBrRGB1iav7gFOCNx3H31MoES.jpg"
-    },
-    {
-      "id": 8,
-      "title": "A Haunting in Venice",
-      "description": "In post-World War II Venice, Poirot, now retired and living in his own exile, reluctantly attends a seance. But when one of the guests is murdered, it is up to the former detective to once again uncover the killer.",
-      "year": 2023,
-      "genre": [
-        "Crime",
-        "Drama",
-        "Horror"
-      ],
-      "rating": 6.8,
-      "amountOfRatings": 21000,
-      "director": [
-        "Kenneth Branagh"
-      ],
-      "posterSrc": "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/261/2023/08/22115134/1Xgjl22MkAZQUavvOeBqRehrvqO-scaled.jpg",
-      "imageSrc": "https://arconline.co.uk/app/uploads/2023/09/a-haunting-in-venice.jpg"
     },
     {
       "id": 9,
@@ -157,8 +132,7 @@
         "Drama",
         "Thriller"
       ],
-      "rating": 8.4,
-      "amountOfRatings": 1400000,
+      "rating": "8.4",
       "director": [
         "Todd Phillips"
       ],
@@ -166,22 +140,52 @@
       "imageSrc": "https://www.themoviedb.org/t/p/original/f5F4cRhQdUbyVbB5lTNCwUzD6BP.jpg"
     },
     {
-      "id": 10,
       "title": "Killers of the Flower Moon",
       "description": "When oil is discovered in 1920s Oklahoma under Osage Nation land, the Osage people are murdered one by one - until the FBI steps in to unravel the mystery.",
-      "year": 2023,
       "genre": [
         "Crime",
         "Drama",
         "History"
       ],
-      "rating": 8.0,
-      "amountOfRatings": 1400000,
+      "rating": "8",
       "director": [
         "Martin Scorsese"
       ],
       "posterSrc": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/dB6Krk806zeqd0YNp2ngQ9zXteH.jpg",
-      "imageSrc": "https://www.themoviedb.org/t/p/original/wCte7A4O2L7CAiw70fbFuvkngA7.jpg"
+      "imageSrc": "https://www.themoviedb.org/t/p/original/wCte7A4O2L7CAiw70fbFuvkngA7.jpg",
+      "year": 2023,
+      "id": 10
+    },
+    {
+      "title": "Django Unchained",
+      "description": "With the help of a German bounty-hunter, a freed slave sets out to rescue his wife from a brutal plantation owner in Mississippi.",
+      "genre": [
+        "Drama",
+        "Western"
+      ],
+      "rating": "8.5",
+      "director": [
+        "Quentin Tarantino"
+      ],
+      "posterSrc": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg",
+      "imageSrc": "https://www.themoviedb.org/t/p/original/lVcI3MOtumvEbOdS1Og7QoV6Lfc.jpg",
+      "year": "2012",
+      "id": 11
+    },
+    {
+      "title": "The Shawshank Redemption",
+      "description": "Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.",
+      "genre": [
+        "Drama"
+      ],
+      "rating": "9.3",
+      "director": [
+        "Frank Darabont"
+      ],
+      "posterSrc": "https://www.themoviedb.org/t/p/w220_and_h330_face/hxcHfW0o5QhY6slqGc7dkEkvo6U.jpg",
+      "imageSrc": "https://www.themoviedb.org/t/p/original/v8xVDqt8uCul3c3mgx4VpGCwxJC.jpg",
+      "year": "1994",
+      "id": 12
     }
   ],
   "actors": [
@@ -234,16 +238,16 @@
       "profilePictureSrc": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/AbCqqFxNi5w3nDUFdQt0DGMFh5H.jpg"
     },
     {
-      "id": 5,
       "name": "Michelle Yeoh",
       "birthday": "August 6, 1962",
+      "about": "Michelle Yeoh Choo Kheng is a Malaysian actress. Credited as Michelle Khan in her early films in Hong Kong, she rose to fame in the 1990s after starring in Hong Kong action films where she performed her own stunts. These roles include Yes, Madam (1985); Magnificent Warriors (1987); Police Story 3: Supercop (1992); The Heroic Trio (1993); and Holy Weapon (1993).",
+      "profilePictureSrc": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/6oxvfyrrM3YmhgFZSqc8ESqPZoC.jpg",
       "ocupation": [
         "Actress",
         "Producer",
         "Writer"
       ],
-      "about": "Michelle Yeoh Choo Kheng is a Malaysian actress. Credited as Michelle Khan in her early films in Hong Kong, she rose to fame in the 1990s after starring in Hong Kong action films where she performed her own stunts. These roles include Yes, Madam (1985); Magnificent Warriors (1987); Police Story 3: Supercop (1992); The Heroic Trio (1993); and Holy Weapon (1993).",
-      "profilePictureSrc": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/6oxvfyrrM3YmhgFZSqc8ESqPZoC.jpg"
+      "id": 5
     },
     {
       "id": 6,
@@ -258,16 +262,16 @@
       "profilePictureSrc": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/qmTiAm3LII5moykSriVkJCeysKC.jpg"
     },
     {
-      "id": 7,
       "name": "Joaquin Phoenix",
       "birthday": "October 28, 1974",
+      "about": "Joaquin Rafael Phoenix is an American actor. Known for playing dark and unconventional characters in independent films, he has received various accolades, including an Academy Award, a British Academy Film Award, a Grammy Award, and two Golden Globe Awards. In 2020, The New York Times named him one of the greatest actors of the 21st century.",
+      "profilePictureSrc": "https://www.themoviedb.org/t/p/w220_and_h330_face/e0tlf8wq9tZYCY96bf6gfv46Yc.jpg",
       "ocupation": [
         "Actor",
         "Producer",
         "Director"
       ],
-      "about": "Joaquin Rafael Phoenix is an American actor. Known for playing dark and unconventional characters in independent films, he has received various accolades, including an Academy Award, a British Academy Film Award, a Grammy Award, and two Golden Globe Awards. In 2020, The New York Times named him one of the greatest actors of the 21st century.",
-      "profilePictureSrc": "https://www.themoviedb.org/t/p/w220_and_h330_face/e0tlf8wq9tZYCY96bf6gfv46Yc.jpg"
+      "id": 7
     },
     {
       "id": 8,
@@ -280,14 +284,21 @@
       ],
       "about": "Robert Anthony De Niro is an American actor. Known for his collaborations with Martin Scorsese, he is considered to be one of the most influential actors of his generation. De Niro is the recipient of various accolades, including two Academy Awards, a Golden Globe Award, the Cecil B. DeMille Award, and a Screen Actors Guild Life Achievement Award. In 2009, De Niro received the Kennedy Center Honor, and earned a Presidential Medal of Freedom from U.S. President Barack Obama in 2016.",
       "profilePictureSrc": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/cT8htcckIuyI1Lqwt1CvD02ynTh.jpg"
+    },
+    {
+      "name": "Jamie Foxx",
+      "birthday": "December 13, 1967",
+      "about": "Eric Marlon Bishop  known professionally as Jamie Foxx, is an American actor, comedian, and singer. He received acclaim for his portrayal of Ray Charles in the film Ray (2004), winning the Academy Award, BAFTA, Screen Actors Guild Award, and Golden Globe Award for Best Actor. That same year, he was nominated for the Academy Award for Best Supporting Actor for his role in the crime film Collateral.",
+      "profilePictureSrc": "https://www.themoviedb.org/t/p/original/6nyD2q94ASajpenuHecsrA1HFBo.jpg",
+      "ocupation": [
+        "actor",
+        "producer",
+        "writer"
+      ],
+      "id": 10
     }
   ],
   "actorMovies": [
-    {
-      "id": 1,
-      "actorId": 1,
-      "movieId": 1
-    },
     {
       "id": 2,
       "actorId": 2,
@@ -327,16 +338,6 @@
       "id": 9,
       "actorId": 1,
       "movieId": 7
-    },
-    {
-      "id": 10,
-      "actorId": 1,
-      "movieId": 10
-    },
-    {
-      "id": 11,
-      "actorId": 8,
-      "movieId": 10
     },
     {
       "id": 12,
@@ -384,21 +385,6 @@
       "movieId": 5
     },
     {
-      "id": 21,
-      "actorId": 4,
-      "movieId": 8
-    },
-    {
-      "id": 22,
-      "actorId": 5,
-      "movieId": 8
-    },
-    {
-      "id": 23,
-      "actorId": 6,
-      "movieId": 8
-    },
-    {
       "id": 24,
       "actorId": 7,
       "movieId": 6
@@ -417,6 +403,35 @@
       "id": 27,
       "actorId": 8,
       "movieId": 9
+    },
+    {
+      "movieId": 11,
+      "actorId": 1,
+      "id": 28
+    },
+    {
+      "movieId": 10,
+      "actorId": 1,
+      "id": 30
+    },
+    {
+      "movieId": 11,
+      "actorId": 10,
+      "id": 36
+    }
+  ],
+  "movieTrailers": [
+    {
+      "movieId": 10,
+      "title": "Killers of the Flower Moon | Official Trailer",
+      "trailerSrc": "https://www.youtube.com/embed/7cx9nCHsemc",
+      "id": 2
+    },
+    {
+      "movieId": 11,
+      "title": "DJANGO UNCHAINED - Official International Trailer",
+      "trailerSrc": "https://www.youtube.com/embed/_iH0UBYDI4g",
+      "id": 3
     }
   ]
 }
