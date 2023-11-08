@@ -217,7 +217,9 @@
     .trailerItem {
         display: flex;
         align-items: flex-start;
+
         .videoContainer {
+            width: 650px;
             @include mixin.lg-screen-additional {
                 width: 550px;
             }

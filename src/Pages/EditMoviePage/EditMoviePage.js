@@ -153,11 +153,7 @@ function EditMoviePage() {
       return;
     }
     const directorArr = enteredDirectorValue.split(",");
-    const updatedDirectorArr = directorArr.map((directorItem) => {
-      const trimmedDirector = directorItem.trim();
-      return trimmedDirector;
-    });
-    setDirector(updatedDirectorArr);
+    setDirector(directorArr);
   };
 
   const editMovieHandler = async (e) => {

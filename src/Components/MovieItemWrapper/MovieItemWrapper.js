@@ -13,7 +13,7 @@ const MovieItemWrapper = ({ data }) => {
       <Link to={`/movies/${id}`}>
         <div className={styles.movieImg}>
           <img src={posterSrc} alt="movie poster" />
-          <span>⭐{rating}</span>
+          {rating && <span>⭐{rating}</span>}
         </div>
         <div className={styles.titleWrapper}>
           <h3>{title}</h3>

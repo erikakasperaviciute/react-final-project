@@ -158,6 +158,7 @@ function MoviePage() {
   const removeActorFromMovieHandler = (id) => {
     axios.delete(`${API_URL}/actorMovies/${id}`);
     setActors((prevActors) => prevActors.filter((actor) => actor.id !== id));
+    toast.success("Actor removed from the movie");
   };
 
   const storyLineElement = movie.description && (

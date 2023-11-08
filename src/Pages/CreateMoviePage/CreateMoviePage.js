@@ -132,11 +132,7 @@ function CreateMoviePage() {
       return;
     }
     const directorArr = enteredDirectorValue.split(",");
-    const updatedDirectorArr = directorArr.map((directorItem) => {
-      const trimmedDirector = directorItem.trim();
-      return trimmedDirector;
-    });
-    setDirector(updatedDirectorArr);
+    setDirector(directorArr);
   };
 
   const newMovieHandler = async (e) => {
@@ -147,7 +143,7 @@ function CreateMoviePage() {
       description,
       year,
       genre,
-      rating: Number(rating),
+      rating,
       director,
       posterSrc,
       imageSrc,

@@ -53,6 +53,12 @@
     .actorMainInfoWrapper {
         display: flex;
         gap: 30px;
+        @include mixin.m-screen {
+            flex-wrap: wrap;
+        }
+        @include mixin.xs-screen {
+            justify-content: center;
+        }
         img {
             width: 280px;
             object-fit: cover;
@@ -72,8 +78,11 @@
     .moviesWrapper {
         display: flex;
         gap: 30px;
-        padding-bottom: 100px; //Laikinai
-
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+        @include mixin.xs-screen {
+            gap: 20px;
+        }
         a {
             text-decoration: none;
             color: whitesmoke;
@@ -87,6 +96,8 @@
                 position: relative;
                 border-radius: 8px;
                 span {
+                    font-family: "Russo One", sans-serif;
+                    font-size: 14px;
                     min-width: 65px;
                     position: absolute;
                     top: 5px;
